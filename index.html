@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company Name - Precision Engraving & Safety Signs</title>
+    <title>Your Company Name - Single Page Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* This CSS is necessary to make the single-page menu links work by scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-            <a href="index.html" class="logo">YourLogo</a>
+            <a href="#home" class="logo">YourLogo</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="services.html">Services</a></li> 
-                    <li><a href="portfolio.html">Our Work</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Request a Quote</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Our Work</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Request a Quote</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        
+        <section class="hero" id="home">
             <div class="hero-content">
                 <h1>Precision Traffolyte Engraving & Safety Signage</h1>
                 <p>Guaranteeing Compliance and Durability for Australian Industry. Fast, Accurate, and Built to Last.</p>
-                <a href="contact.html" class="btn btn-primary">Get a Custom Quote</a>
-                <a href="services.html" class="btn btn-secondary">View Our Services</a>
+                <a href="#contact" class="btn btn-primary">Get a Custom Quote</a>
+                <a href="#services" class="btn btn-secondary">View Our Services</a>
             </div>
         </section>
 
@@ -43,17 +50,17 @@
                     <div class="service-card">
                         <h3>Electrical Engraving</h3>
                         <p>High-precision traffolyte and metal engraving for switchboards, control panels, and compliance plates.</p>
-                        <a href="services.html">Learn More &rarr;</a>
+                        <a href="#services">Learn More &rarr;</a>
                     </div>
                     <div class="service-card">
                         <h3>UV Printed Safety Signs</h3>
                         <p>Durable, UV-resistant safety signage compliant with all Australian Standards (AS 1319-1994).</p>
-                        <a href="services.html">Learn More &rarr;</a>
+                        <a href="#services">Learn More &rarr;</a>
                     </div>
                     <div class="service-card">
                         <h3>Custom Labels & Panels</h3>
                         <p>From custom mimic panels to specialized industrial labels, we provide solutions tailored to your project.</p>
-                        <a href="services.html">Learn More &rarr;</a>
+                        <a href="#services">Learn More &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -78,64 +85,18 @@
                 <cite>– John Doe, Project Manager at Major Electrical Corp</cite>
             </div>
         </section>
-
-        <section class="section section-light">
+        
+        <section class="section section-light" style="padding-top: 20px; padding-bottom: 60px;">
             <div class="container" style="text-align: center;">
-                <h2>Ready to Start Your Project?</h2>
+                <h2 style="margin-top: 0;">Ready to Start Your Project?</h2>
                 <p>Let our experts provide a detailed, no-obligation quote for your specific requirements.</p>
-                <a href="contact.html" class="btn btn-primary">Get a Free Quote Today</a>
+                <a href="#contact" class="btn btn-primary">Get a Free Quote Today</a>
             </div>
         </section>
 
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Your Company Name. All Rights Reserved. | <a href="privacy.html" style="color: #fff;">Privacy Policy</a></p>
-            <p>123 Industrial Ave, Sydney NSW 2000 | (02) 1234 5678</p>
-        </div>
-    </footer>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Precision Engraving</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">YourLogo</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="portfolio.html">Our Work</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Request a Quote</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero" style="height: 40vh; background-image: url('https://via.placeholder.com/1500x600.png?text=Our+Services');">
-            <div class="hero-content">
-                <h1>Our Capabilities</h1>
-                <p>Comprehensive Industrial Marking Solutions</p>
-            </div>
-        </section>
-
-        <section class="section section-light">
-            <div class="container">
+        <section class="section section-dark" id="services" style="padding-top: 100px;">
+             <div class="container">
+                <h1 class="section-title" style="color: var(--light-text-color);">Our Detailed Services</h1>
                 <div class="tabs-container">
                     <input type="radio" name="tabs" id="tab1" checked>
                     <label for="tab1">Electrical Engraving</label>
@@ -171,52 +132,13 @@
                         <h2>Mimic Panels & Schematics</h2>
                         <p>We can produce complex schematic diagrams and mimic panels for control rooms.</p>
                         <p>Materials available: Anodized Aluminium, Acrylic, 316 Stainless Steel, and Brass.</p>
-                        <a href="contact.html" class="btn btn-primary">Get a Custom Quote</a>
+                        <a href="#contact" class="btn btn-primary">Get a Custom Quote</a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Your Company Name. All Rights Reserved. | <a href="privacy.html" style="color: #fff;">Privacy Policy</a></p>
-            <p>123 Industrial Ave, Sydney NSW 2000 | (02) 1234 5678</p>
-        </div>
-    </footer>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work - Precision Engraving</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">YourLogo</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html" class="active">Our Work</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Request a Quote</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="section section-light">
+        <section class="section section-light" id="portfolio">
             <div class="container">
                 <h1 class="section-title">Recent Projects</h1>
                 <p style="text-align: center; max-width: 700px; margin: 0 auto 40px auto;">Explore our gallery of completed industrial labeling and signage projects.</p>
@@ -272,53 +194,15 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
-            <p>123 Industrial Ave, Sydney NSW 2000 | (02) 1234 5678</p>
-        </div>
-    </footer>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Precision Engraving</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">YourLogo</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Our Work</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Request a Quote</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="section section-light">
+        <section class="section section-dark" id="about">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
-                        <h1 class="section-title" style="text-align: left;">Our Story</h1>
-                        <p>Founded in 2010, Precision Engraving has established itself as a premier provider of industrial marking solutions in Australia. We understand that accurate, durable labeling is not just a finishing touch—it's a critical component of safety and compliance.</p>
-                        <p>We utilize state-of-the-art laser and rotary engraving technology to ensure fast turnaround times without compromising on quality.</p>
-                        <a href="portfolio.html" class="btn btn-primary">See Our Work</a>
+                        <h1 class="section-title" style="text-align: left; color: var(--light-text-color);">Our Story</h1>
+                        <p style="color: var(--light-text-color);">Founded in 2010, Precision Engraving has established itself as a premier provider of industrial marking solutions in Australia. We understand that accurate, durable labeling is not just a finishing touch—it's a critical component of safety and compliance.</p>
+                        <p style="color: var(--light-text-color);">We utilize state-of-the-art laser and rotary engraving technology to ensure fast turnaround times without compromising on quality.</p>
+                        <a href="#portfolio" class="btn btn-secondary">See Our Work</a>
                     </div>
                     <div class="about-image">
                         <img src="https://via.placeholder.com/600x400.png?text=Workshop+Floor" alt="Our Workshop" style="width: 100%; border-radius: 5px;">
@@ -326,8 +210,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="section section-dark">
+        
+        <section class="section section-light">
             <div class="container">
                 <h2 class="section-title">Meet The Experts</h2>
                 <div class="team-grid">
@@ -349,51 +233,13 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
-            <p>123 Industrial Ave, Sydney NSW 2000 | (02) 1234 5678</p>
-        </div>
-    </footer>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Precision Engraving</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">YourLogo</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Our Work</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="active">Request a Quote</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="section section-light">
+        <section class="section section-dark" id="contact">
             <div class="container">
-                <h1 class="section-title">Get In Touch</h1>
+                <h1 class="section-title" style="color: var(--light-text-color);">Get In Touch</h1>
                 
                 <div class="contact-grid">
-                    <div class="contact-info">
+                    <div class="contact-info" style="color: var(--light-text-color);">
                         <h3>Contact Details</h3>
                         <p><strong>Address:</strong><br>123 Industrial Ave,<br>Sydney NSW 2000</p>
                         <p><strong>Phone:</strong><br>(02) 1234 5678</p>
@@ -405,19 +251,19 @@
                     </div>
 
                     <div class="contact-form">
-                        <h3>Request a Quote</h3>
-                        <p>Please fill out the form below and attach your drawings if available.</p>
+                        <h3 style="color: var(--light-text-color);">Request a Quote</h3>
+                        <p style="color: var(--light-text-color);">Please fill out the form below and attach your drawings if available.</p>
                         <form action="#" method="POST">
-                            <label for="name">Name</label>
+                            <label for="name" style="color: var(--light-text-color);">Name</label>
                             <input type="text" id="name" name="name" required>
 
-                            <label for="email">Email</label>
+                            <label for="email" style="color: var(--light-text-color);">Email</label>
                             <input type="email" id="email" name="email" required>
 
-                            <label for="phone">Phone</label>
+                            <label for="phone" style="color: var(--light-text-color);">Phone</label>
                             <input type="tel" id="phone" name="phone">
 
-                            <label for="service">Service Required</label>
+                            <label for="service" style="color: var(--light-text-color);">Service Required</label>
                             <select id="service" name="service" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
                                 <option value="engraving">Electrical Engraving</option>
                                 <option value="signs">Safety Signs</option>
@@ -425,7 +271,7 @@
                                 <option value="other">Other</option>
                             </select>
 
-                            <label for="message">Project Details</label>
+                            <label for="message" style="color: var(--light-text-color);">Project Details</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
 
                             <button type="submit" class="btn btn-primary">Send Request</button>
@@ -434,13 +280,15 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 Your Company Name. All Rights Reserved.</p>
+            <p>&copy; 2025 Your Company Name. All Rights Reserved. | <a href="#home" style="color: #fff;">Back to Top</a></p>
             <p>123 Industrial Ave, Sydney NSW 2000 | (02) 1234 5678</p>
         </div>
     </footer>
+
 </body>
 </html>
