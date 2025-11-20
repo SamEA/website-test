@@ -9,9 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* This CSS is necessary to make the single-page menu links work by scrolling */
+        /* Smooth scrolling for anchor links */
         html {
             scroll-behavior: smooth;
+        }
+        /* Custom styles for the dark contact form readability */
+        #contact .contact-form h3, #contact .contact-form p, #contact .contact-form label, #contact .contact-info h3, #contact .contact-info p {
+            color: var(--light-text-color) !important; /* Forces white text */
+        }
+        /* Overriding the default dark section color for the contact area to be the primary deep blue */
+        #contact {
+            background-color: var(--primary-color) !important;
         }
     </style>
 </head>
@@ -151,7 +159,6 @@
                             <p>Traffolyte Labeling</p>
                         </div>
                     </div>
-                    
                     <div class="gallery-item">
                         <img src="https://via.placeholder.com/400x300.png?text=Mimic+Panel" alt="Mimic Panel">
                         <div class="gallery-overlay">
@@ -159,7 +166,6 @@
                             <p>Custom Mimic Panel</p>
                         </div>
                     </div>
-
                     <div class="gallery-item">
                         <img src="https://via.placeholder.com/400x300.png?text=Stainless+Tags" alt="Stainless Tags">
                         <div class="gallery-overlay">
@@ -167,7 +173,6 @@
                             <p>316 Stainless Etching</p>
                         </div>
                     </div>
-
                     <div class="gallery-item">
                         <img src="https://via.placeholder.com/400x300.png?text=Safety+Signage" alt="Safety Signage">
                         <div class="gallery-overlay">
@@ -175,16 +180,14 @@
                             <p>Reflective Safety Signs</p>
                         </div>
                     </div>
-
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <img src="https://via.placeholder.com/400x300.png?text=Valve+Tags" alt="Valve Tags">
                         <div class="gallery-overlay">
                             <h3>HVAC System</h3>
                             <p>Brass Valve Tags</p>
                         </div>
                     </div>
-
-                     <div class="gallery-item">
+                    <div class="gallery-item">
                         <img src="https://via.placeholder.com/400x300.png?text=Control+Panel" alt="Control Panel">
                         <div class="gallery-overlay">
                             <h3>Instrumentation</h3>
@@ -195,14 +198,14 @@
             </div>
         </section>
 
-        <section class="section section-dark" id="about">
+        <section class="section section-light" id="about">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
-                        <h1 class="section-title" style="text-align: left; color: var(--light-text-color);">Our Story</h1>
-                        <p style="color: var(--light-text-color);">Founded in 2010, Precision Engraving has established itself as a premier provider of industrial marking solutions in Australia. We understand that accurate, durable labeling is not just a finishing touch—it's a critical component of safety and compliance.</p>
-                        <p style="color: var(--light-text-color);">We utilize state-of-the-art laser and rotary engraving technology to ensure fast turnaround times without compromising on quality.</p>
-                        <a href="#portfolio" class="btn btn-secondary">See Our Work</a>
+                        <h1 class="section-title" style="text-align: left;">Our Story</h1>
+                        <p>Founded in 2010, Precision Engraving has established itself as a premier provider of industrial marking solutions in Australia. We understand that accurate, durable labeling is not just a finishing touch—it's a critical component of safety and compliance.</p>
+                        <p>We utilize state-of-the-art laser and rotary engraving technology to ensure fast turnaround times without compromising on quality.</p>
+                        <a href="#portfolio" class="btn btn-primary">See Our Work</a>
                     </div>
                     <div class="about-image">
                         <img src="https://via.placeholder.com/600x400.png?text=Workshop+Floor" alt="Our Workshop" style="width: 100%; border-radius: 5px;">
@@ -211,7 +214,7 @@
             </div>
         </section>
         
-        <section class="section section-light">
+        <section class="section section-dark">
             <div class="container">
                 <h2 class="section-title">Meet The Experts</h2>
                 <div class="team-grid">
@@ -234,12 +237,12 @@
             </div>
         </section>
 
-        <section class="section section-dark" id="contact">
+        <section class="section" id="contact">
             <div class="container">
-                <h1 class="section-title" style="color: var(--light-text-color);">Get In Touch</h1>
+                <h1 class="section-title">Get In Touch</h1>
                 
                 <div class="contact-grid">
-                    <div class="contact-info" style="color: var(--light-text-color);">
+                    <div class="contact-info">
                         <h3>Contact Details</h3>
                         <p><strong>Address:</strong><br>123 Industrial Ave,<br>Sydney NSW 2000</p>
                         <p><strong>Phone:</strong><br>(02) 1234 5678</p>
@@ -251,19 +254,19 @@
                     </div>
 
                     <div class="contact-form">
-                        <h3 style="color: var(--light-text-color);">Request a Quote</h3>
-                        <p style="color: var(--light-text-color);">Please fill out the form below and attach your drawings if available.</p>
+                        <h3>Request a Quote</h3>
+                        <p>Please fill out the form below and attach your drawings if available.</p>
                         <form action="#" method="POST">
-                            <label for="name" style="color: var(--light-text-color);">Name</label>
+                            <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
 
-                            <label for="email" style="color: var(--light-text-color);">Email</label>
+                            <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
 
-                            <label for="phone" style="color: var(--light-text-color);">Phone</label>
+                            <label for="phone">Phone</label>
                             <input type="tel" id="phone" name="phone">
 
-                            <label for="service" style="color: var(--light-text-color);">Service Required</label>
+                            <label for="service">Service Required</label>
                             <select id="service" name="service" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
                                 <option value="engraving">Electrical Engraving</option>
                                 <option value="signs">Safety Signs</option>
@@ -271,7 +274,7 @@
                                 <option value="other">Other</option>
                             </select>
 
-                            <label for="message" style="color: var(--light-text-color);">Project Details</label>
+                            <label for="message">Project Details</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
 
                             <button type="submit" class="btn btn-primary">Send Request</button>
@@ -289,6 +292,5 @@
             <p>123 Industrial Ave, Sydney NSW 2000 | (02) 1234 5678</p>
         </div>
     </footer>
-
 </body>
 </html>
